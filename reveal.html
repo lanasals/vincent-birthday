@@ -25,29 +25,30 @@
             align-items: center;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            min-height: fit-content; 
+            margin: auto; /* This keeps it centered vertically */
         }
 
         .mono-text {
+            /* Using a clean, light Mono font stack */
             font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
             color: #1a1a1a;
-            font-weight: 400; /* Slightly heavier for better legibility on white */
+            font-weight: 500; 
             font-size: 14px;
             line-height: 1.6;
             white-space: pre-line;
-            text-align: left; /* Aligned left like a real itinerary */
+            text-align: left;
             width: 100%;
         }
 
         .top-logo {
-            width: 80%;
-            max-width: 280px;
+            width: 100%;
+            max-width: 320px;
             margin-bottom: 30px;
         }
 
         .stamp-container {
             position: relative;
-            width: 180px;
+            width: 200px;
             margin-bottom: 40px;
         }
 
@@ -64,9 +65,8 @@
         }
 
         .signature {
-            width: 140px;
+            width: 150px;
             margin: 30px 0;
-            align-self: center;
         }
 
         .schedule-title {
@@ -81,12 +81,6 @@
             margin-top: 40px;
             border-radius: 12px;
             overflow: hidden;
-            background: #000; /* Pre-loads black to match Spotify theme */
-        }
-
-        @media (max-width: 400px) {
-            .white-frame { padding: 30px 20px; }
-            .mono-text { font-size: 13px; }
         }
     </style>
 </head>
@@ -94,7 +88,7 @@
 
     <div class="white-frame">
         
-        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava Crests" class="top-logo">
+        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava Logo" class="top-logo">
 
         <div class="stamp-container">
             <img src="Passport_WebsiteGiftPage.png" alt="Passport Stamp" class="passport-stamp">
@@ -121,12 +115,13 @@
             I’m very excited ;)
         </div>
 
-        <img src="Signature_WebsiteGiftPage.png" alt="Lola" class="signature">
+        <img src="Signature_WebsiteGiftPage.png" alt="Signature" class="signature">
 
         <div class="spotify-container">
             <iframe 
+                data-testid="embed-iframe" 
                 style="border-radius:12px" 
-                src="http://googleusercontent.com/spotify.com/5" 
+                src="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBMmF?si=some-random-code" 
                 width="100%" 
                 height="352" 
                 frameBorder="0" 
