@@ -87,6 +87,21 @@
             width: 80px; 
             height: auto;
         }
+
+                /* This code only runs on mobile devices */
+        @media only screen and (max-width: 600px) {
+            .main-text {
+                font-weight: 900;       /* Maximize thickness for mobile */
+                letter-spacing: -0.1em; /* Squeeze even more to fill the "thin" gaps */
+                font-size: 52px;        /* Slightly larger to increase visual weight */
+            }
+            
+            .heart-icon {
+                width: 52px;            /* Scale the heart to match the bigger text */
+                top: 3px;               /* Re-align the heart position */
+            }
+        }
+        
     </style>
 </head>
 <body>
