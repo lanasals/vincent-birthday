@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -28,10 +28,10 @@
             font-size: 48px;
             font-weight: 800; 
             font-stretch: 100%; 
-            line-height: 0.82;       /* Tighter vertical spacing */
-            letter-spacing: -0.06em; /* Tighter horizontal spacing */
+            line-height: 0.82;       
+            letter-spacing: -0.06em; 
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 5px; /* Tighter gap to subtitle */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,13 +52,14 @@
         }
 
         .subtitle {
-            font-family: 'Roboto Slab', serif;
-            font-weight: 100; 
-            font-size: 12px;
+            /* Using high-end system fonts that look like Roboto Slab */
+            font-family: "Iowan Old Style", "Apple Garamond", "Charter", "Times New Roman", serif;
+            font-weight: 300; 
+            font-size: 14px; /* Slightly larger since it's a thinner font */
+            font-style: italic; /* Italics often look better for "ExtraLight" feels */
             opacity: 0.8;
-            margin-top: 5px;
             margin-bottom: 40px;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.05em;
         }
 
         .reveal-button {
@@ -70,11 +71,11 @@
         }
 
         .reveal-button:hover {
-            transform: scale(1.15);
+            transform: scale(1.1);
         }
 
         .reveal-button img {
-            width: 70px; 
+            width: 80px; 
             height: auto;
         }
     </style>
