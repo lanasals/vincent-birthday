@@ -43,9 +43,12 @@
         }
 
         .heart-icon {
-            width: 45px; /* Adjust based on your image scale */
+            width: 45px; 
             height: auto;
-            margin: 0 2px;
+            margin: 0 -2px; /* Small negative margin to pull A-M and R closer to the heart */
+            vertical-align: middle; /* Centers it with the text baseline */
+            position: relative;
+            top: -2px; /* Move this up or down by 1px at a time to get it perfect */
         }
 
         .subtitle {
