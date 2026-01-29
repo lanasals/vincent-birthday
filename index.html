@@ -4,77 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Vincent!</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    
     <style>
-        body { 
-            background: #1a1a1a; 
-            color: white; 
-            font-family: 'Segoe UI', sans-serif;
-            text-align: center;
+        body {
+            background-color: #00552B;
             margin: 0;
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: center;
             height: 100vh;
-        }
-        .container { padding: 20px; }
-        .hidden { display: none; }
-        h1 { font-size: 3rem; color: #ffcc00; }
-        .destination-card {
-            background: white;
-            color: #333;
-            padding: 30px;
-            border-radius: 20px;
-            display: inline-block;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            margin-top: 20px;
-        }
-        .flag { font-size: 50px; margin-bottom: 10px; }
-        .btn {
-            background: #ff4500;
             color: white;
-            padding: 20px 40px;
-            font-size: 1.5rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.2s;
+            text-align: center;
+            overflow: hidden;
         }
-        .btn:hover { transform: scale(1.1); }
+
+        .main-text {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 48px;
+            font-weight: 800; /* Max weight */
+            font-stretch: 100%; /* Max width */
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .amor-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heart-icon {
+            width: 45px; /* Adjust based on your image scale */
+            height: auto;
+            margin: 0 2px;
+        }
+
+        .subtitle {
+            font-family: 'Roboto Slab', serif;
+            font-size: 12px;
+            font-weight: 200; /* ExtraLight */
+            opacity: 0.9;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        .reveal-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            padding: 0;
+        }
+
+        .reveal-button:hover {
+            transform: scale(1.1);
+        }
+
+        .reveal-button img {
+            width: 80px; /* Adjust based on your button design */
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
-    <div id="intro" class="container">
-        <h1>Happy Birthday, Vincent!</h1>
-        <p>I got you something special... but you have to unlock it.</p>
-        <button class="btn" onclick="reveal()">Where are we going?</button>
-    </div>
-
-    <div id="reveal-section" class="container hidden">
-        <div class="flag">🇸🇰</div>
-        <h1>PACK YOUR BAGS!</h1>
-        <div class="destination-card">
-            <h2>BRATISLAVA</h2>
-            <p><strong>A trip to the Slovakian Capital!</strong></p>
-            <p>✈️ Dates: [Add your dates here]</p>
-            <p>🏰 Castle tours, Old Town walks, and plenty of beer.</p>
+    <div class="main-text">
+        HAPPY<br>BIRTHDAY
+        <div class="amor-container">
+            AM<img src="Heart_WebsiteMainPage.png" alt="O" class="heart-icon">R
         </div>
     </div>
 
-    <script>
-        function reveal() {
-            document.getElementById('intro').classList.add('hidden');
-            document.getElementById('reveal-section').classList.remove('hidden');
-            
-            // Celebration!
-            confetti({
-                particleCount: 200,
-                spread: 100,
-                origin: { y: 0.6 },
-                colors: ['#ff0000', '#ffffff', '#0000ff'] // Colors of the Slovak flag
-            });
-        }
-    </script>
+    <div class="subtitle">
+        Tap to see your gift
+    </div>
+
+    <button class="reveal-button" onclick="location.href='reveal.html'">
+        <img src="Button_WebsiteMainPage.png" alt="Go">
+    </button>
+
 </body>
 </html>
