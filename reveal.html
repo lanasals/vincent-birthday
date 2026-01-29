@@ -25,11 +25,11 @@
             align-items: center;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 60px; /* Space for scrolling at the bottom */
+            margin-bottom: 60px;
         }
 
         .mono-text {
-            font-family: ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+            font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', Menlo, Monaco, Consolas, monospace;
             color: #1a1a1a;
             font-weight: 500; 
             font-size: 14px;
@@ -47,7 +47,7 @@
 
         .stamp-container {
             position: relative;
-            width: 200px;
+            width: 180px;
             margin-bottom: 40px;
         }
 
@@ -80,8 +80,8 @@
             margin-top: 40px;
             border-radius: 12px;
             overflow: hidden;
-            min-height: 352px;
             background: #000;
+            line-height: 0; /* Fixes tiny gap at bottom of iframe */
         }
     </style>
 </head>
@@ -115,7 +115,7 @@
             I’m very excited ;)
         </div>
 
-        <img src="Signature_WebsiteGiftPage.png" alt="Lola" class="signature">
+        <img src="Signature_WebsiteGiftPage.png" alt="Signature" class="signature">
 
         <div class="spotify-container">
             <iframe 
