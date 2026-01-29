@@ -25,12 +25,11 @@
             align-items: center;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin: auto; /* This keeps it centered vertically */
+            margin-bottom: 40px; /* Space at the bottom for scrolling */
         }
 
         .mono-text {
-            /* Using a clean, light Mono font stack */
-            font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+            font-family: ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
             color: #1a1a1a;
             font-weight: 500; 
             font-size: 14px;
@@ -80,18 +79,17 @@
             width: 100%;
             margin-top: 40px;
             border-radius: 12px;
-            overflow: hidden;
+            min-height: 352px; /* Forces the phone to show the space */
         }
     </style>
 </head>
 <body>
 
     <div class="white-frame">
-        
-        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava Logo" class="top-logo">
+        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava" class="top-logo">
 
         <div class="stamp-container">
-            <img src="Passport_WebsiteGiftPage.png" alt="Passport Stamp" class="passport-stamp">
+            <img src="Passport_WebsiteGiftPage.png" alt="Stamp" class="passport-stamp">
             <img src="Bow_WebsiteGiftPage.png" alt="Bow" class="bow-icon">
         </div>
 
@@ -115,13 +113,13 @@
             I’m very excited ;)
         </div>
 
-        <img src="Signature_WebsiteGiftPage.png" alt="Signature" class="signature">
+        <img src="Signature_WebsiteGiftPage.png" alt="Lola" class="signature">
 
         <div class="spotify-container">
             <iframe 
                 data-testid="embed-iframe" 
                 style="border-radius:12px" 
-                src="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBMmF?si=some-random-code" 
+                src="https://open.spotify.com/embed/playlist/2H9O6M7PjXzC7hV3oD8D7q?utm_source=generator" 
                 width="100%" 
                 height="352" 
                 frameBorder="0" 
@@ -130,7 +128,6 @@
                 loading="lazy">
             </iframe>
         </div>
-
     </div>
 
 </body>
