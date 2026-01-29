@@ -18,27 +18,33 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            color: #F4F3F3; /* Your custom off-white */
+            color: #F4F3F3;
             text-align: center;
             overflow: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
+            /* Standardizes how text is drawn across devices */
+            -webkit-font-smoothing: initial; 
+            text-rendering: optimizeSpeed;
         }
 
         .main-text {
             font-family: 'Bricolage Grotesque', sans-serif;
             font-size: 48px;
-            font-variation-settings: "wght" 800, "wdth" 100, "opsz" 52; 
-            line-height: 0.82;       
-            letter-spacing: -0.06em; 
+            
+            /* Using 800 instead of variation-settings for better compatibility */
+            font-weight: 800; 
+            
+            /* This handles the "Maximum Width" from your design */
+            font-stretch: 100%; 
+            
+            line-height: 0.82;
+            letter-spacing: -0.06em;
             text-transform: uppercase;
-            margin-bottom: 5px; /* Tighter gap to subtitle */
+            margin-bottom: 12px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
+        
         .amor-container {
             display: flex;
             align-items: center;
