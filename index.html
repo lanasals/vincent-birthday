@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Vincent!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -23,14 +24,13 @@
         .main-text {
             font-family: 'Bricolage Grotesque', sans-serif;
             font-size: 48px;
-            font-weight: 800; /* Max weight */
-            font-stretch: 100%; /* Max width */
-            
-            line-height: 0.85;
-            letter-spacing: -0.05em;
-            
+            font-weight: 800; 
+            font-stretch: 100%; 
+            /* THE SPACING FIXES */
+            line-height: 0.82;       /* Tighter vertical spacing */
+            letter-spacing: -0.06em; /* Tighter horizontal spacing */
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -43,57 +43,39 @@
         }
 
         .heart-icon {
-            width: 45px; 
+            width: 48px; /* Slightly larger to match the bold text */
             height: auto;
-            margin: 0 -2px; /* Small negative margin to pull A-M and R closer to the heart */
-            vertical-align: middle; /* Centers it with the text baseline */
+            margin: 0 -3px; /* Pulls letters closer to the heart */
             position: relative;
-            top: -2px; /* Move this up or down by 1px at a time to get it perfect */
+            top: 2px; /* Adjusts the vertical "O" position */
         }
 
         .subtitle {
+            /* THE ROBOTO SLAB FIX */
             font-family: 'Roboto Slab', serif;
+            font-weight: 100; /* This is ExtraLight */
             font-size: 12px;
-            font-weight: 200; /* ExtraLight */
-            opacity: 0.9;
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
+            opacity: 0.8;
+            margin-top: 5px;
+            margin-bottom: 40px;
+            letter-spacing: 0.02em;
         }
 
         .reveal-button {
             background: none;
             border: none;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             padding: 0;
         }
 
         .reveal-button:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         .reveal-button img {
-            width: 80px; /* Adjust based on your button design */
+            width: 70px; 
             height: auto;
         }
     </style>
 </head>
-<body>
-
-    <div class="main-text">
-        HAPPY<br>BIRTHDAY
-        <div class="amor-container">
-            AM<img src="Heart_WebsiteMainPage.png" alt="O" class="heart-icon">R
-        </div>
-    </div>
-
-    <div class="subtitle">
-        Tap to see your gift
-    </div>
-
-    <button class="reveal-button" onclick="location.href='reveal.html'">
-        <img src="Button_WebsiteMainPage.png" alt="Go">
-    </button>
-
-</body>
-</html>
