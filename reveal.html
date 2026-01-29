@@ -10,8 +10,7 @@
             margin: 0;
             padding: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             min-height: 100vh;
         }
 
@@ -41,41 +40,20 @@
             margin-top: 20px;
         }
 
-        .top-logo {
-            width: 100%;
-            max-width: 320px;
-            margin-bottom: 20px;
-        }
+        .top-logo { width: 100%; max-width: 320px; margin-bottom: 20px; }
+        .stamp-container { position: relative; width: 180px; margin-bottom: 20px; /* Increased margin slightly */ }
+        .passport-stamp { width: 100%; height: auto; }
 
-        .stamp-container {
-            position: relative;
-            width: 200px;
-            margin-bottom: 10px;
-        }
-
-        .passport-stamp {
-            width: 100%;
-            height: auto;
-        }
-
+        /* THE FIX: Pushing the bow further away diagonally */
         .bow-icon {
             position: absolute;
             width: 60px;
-            bottom: -5px;
-            right: -25px;
+            bottom: -25px; /* Pushed further down (was -5px) */
+            right: -45px;  /* Pushed further right (was -25px) */
         }
 
-        .signature {
-            width: 160px;
-            margin: 20px 0;
-        }
-
-        .schedule-title {
-            font-weight: bold;
-            text-decoration: underline;
-            margin-top: 30px;
-            display: block;
-        }
+        .signature { width: 160px; margin: 30px 0 20px 0; }
+        .schedule-title { font-weight: bold; text-decoration: underline; margin-top: 30px; display: block; }
 
         .spotify-container {
             width: 100%;
@@ -90,17 +68,17 @@
 <body>
 
     <div class="white-frame">
-        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava Logo" class="top-logo">
+        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava" class="top-logo">
 
         <div class="stamp-container">
-            <img src="Passport_WebsiteGiftPage.png" alt="Passport Stamp" class="passport-stamp">
+            <img src="Passport_WebsiteGiftPage.png" alt="Stamp" class="passport-stamp">
             <img src="Bow_WebsiteGiftPage.png" alt="Bow" class="bow-icon">
         </div>
 
         <div class="mono-text">
             I am so looking forward to spend two days in Bratislava with you. 
 
-            I have found and secured the best apartment in Bratislava. It is beautiful, big and has every thing we need for our one night in the city lol. The best part is that it has a bathtub. The bad news is that my budget for this trip was 100% consumed by that bathtub, so we have to walk there. jajaja no but we are going by bus, which is worse!!!!
+            I have found and secured the best apartment in Bratislava. It is beautiful, big and has everything we need for our one night in the city lol. The best part is that it has a bathtub. The bad news is that my budget for this trip was 100% consumed by that bathtub, so we have to walk there. jajaja no but we are going by bus, which is worse!!!!
 
             <span class="schedule-title">The schedule</span>
             
