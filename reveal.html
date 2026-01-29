@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bratislava Surprise</title>
+    <style>
+        body {
+            background-color: #00552B;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
+        .white-frame {
+            background-color: #F4F3F3;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 25px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            min-height: fit-content; 
+        }
+
+        .mono-text {
+            font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+            color: #1a1a1a;
+            font-weight: 400; /* Slightly heavier for better legibility on white */
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-line;
+            text-align: left; /* Aligned left like a real itinerary */
+            width: 100%;
+        }
+
+        .top-logo {
+            width: 80%;
+            max-width: 280px;
+            margin-bottom: 30px;
+        }
+
+        .stamp-container {
+            position: relative;
+            width: 180px;
+            margin-bottom: 40px;
+        }
+
+        .passport-stamp {
+            width: 100%;
+            height: auto;
+        }
+
+        .bow-icon {
+            position: absolute;
+            width: 55px;
+            bottom: -15px;
+            right: -25px;
+        }
+
+        .signature {
+            width: 140px;
+            margin: 30px 0;
+            align-self: center;
+        }
+
+        .schedule-title {
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 30px;
+            display: block;
+        }
+
+        .spotify-container {
+            width: 100%;
+            margin-top: 40px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000; /* Pre-loads black to match Spotify theme */
+        }
+
+        @media (max-width: 400px) {
+            .white-frame { padding: 30px 20px; }
+            .mono-text { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="white-frame">
+        
+        <img src="BratislavaLogo_WebsiteGiftPage.png" alt="Bratislava Crests" class="top-logo">
+
+        <div class="stamp-container">
+            <img src="Passport_WebsiteGiftPage.png" alt="Passport Stamp" class="passport-stamp">
+            <img src="Bow_WebsiteGiftPage.png" alt="Bow" class="bow-icon">
+        </div>
+
+        <div class="mono-text">
+            I am so looking forward to spend two days in Bratislava with you. 
+
+            I have found and secured the best apartment in Bratislava. It is beautiful, big and has everything we need for our one night in the city lol. The best part is that it has a bathtub. The bad news is that my budget for this trip was 100% consumed by that bathtub, so we have to walk there. jajaja no but we are going by bus, which is worse!!!!
+
+            <span class="schedule-title">The schedule</span>
+            
+            FEB 13
+            12:35 Bus departs from Vienna
+            13:45 Bus arrives at Bratislava 
+            14:00 Check in at Airbnb 
+
+            FEB 14
+            10:00 Check out from Airbnb 
+            21:23 Bus departs from Bratislava 
+            22:40 Bus arrives at Vienna  
+
+            I’m very excited ;)
+        </div>
+
+        <img src="Signature_WebsiteGiftPage.png" alt="Lola" class="signature">
+
+        <div class="spotify-container">
+            <iframe 
+                style="border-radius:12px" 
+                src="http://googleusercontent.com/spotify.com/5" 
+                width="100%" 
+                height="352" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
