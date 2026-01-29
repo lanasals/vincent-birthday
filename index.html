@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,100..100,200..800&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
     
     <style>
         body {
@@ -16,7 +18,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            color: white;
+            color: #F4F3F3; /* Your custom off-white */
             text-align: center;
             overflow: hidden;
         }
@@ -26,7 +28,6 @@
             font-size: 48px;
             font-weight: 800; 
             font-stretch: 100%; 
-            /* THE SPACING FIXES */
             line-height: 0.82;       /* Tighter vertical spacing */
             letter-spacing: -0.06em; /* Tighter horizontal spacing */
             text-transform: uppercase;
@@ -43,17 +44,16 @@
         }
 
         .heart-icon {
-            width: 48px; /* Slightly larger to match the bold text */
+            width: 48px; 
             height: auto;
-            margin: 0 -3px; /* Pulls letters closer to the heart */
+            margin: 0 -3px; 
             position: relative;
-            top: 2px; /* Adjusts the vertical "O" position */
+            top: 2px; 
         }
 
         .subtitle {
-            /* THE ROBOTO SLAB FIX */
             font-family: 'Roboto Slab', serif;
-            font-weight: 100; /* This is ExtraLight */
+            font-weight: 100; 
             font-size: 12px;
             opacity: 0.8;
             margin-top: 5px;
@@ -79,3 +79,22 @@
         }
     </style>
 </head>
+<body>
+
+    <div class="main-text">
+        HAPPY<br>BIRTHDAY
+        <div class="amor-container">
+            AM<img src="Heart_WebsiteMainPage.png" alt="O" class="heart-icon">R
+        </div>
+    </div>
+
+    <div class="subtitle">
+        Tap to see your gift
+    </div>
+
+    <button class="reveal-button" onclick="location.href='reveal.html'">
+        <img src="Button_WebsiteMainPage.png" alt="Go">
+    </button>
+
+</body>
+</html>
